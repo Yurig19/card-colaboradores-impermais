@@ -4,7 +4,7 @@ import MenuDropDown from '../MenuDropDown'
 import TextInput from '../TextInput'
 import './Forms.css'
 
-const Forms = () => {
+const Forms = (props) => {
 
     const departament = [
         'Produção',
@@ -19,7 +19,12 @@ const Forms = () => {
 
     const submit = (event) => {
         event.preventDefault()
-        console.log('salvou =>', nome, cargo, imagem, departamento)
+        props.registred({
+            nome,
+            cargo,
+            imagem,
+            departamento
+        })
     }
 
     return (
