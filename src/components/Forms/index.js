@@ -11,14 +11,19 @@ const Forms = () => {
         'Recursos Humanos'
     ]
 
+    const submit = (event) => {
+        event.preventDefault()
+        console.log('salvou')
+    }
+
     return (
         <section className='forms'>
-            <form>
+            <form onSubmit={submit}>
                 <h2>Preencha os dados para criar o card do colaborador.</h2>
-                <TextInput label='Nome' placeholder='Digite seu Nome' />
-                <TextInput label='Cargo' placeholder='Digite seu Cargo' />
+                <TextInput required={true} label='Nome' placeholder='Digite seu Nome' />
+                <TextInput required={true} label='Cargo' placeholder='Digite seu Cargo' />
                 <TextInput label='Imagem' placeholder='Informe a URL da Imagem' />
-                <MenuDropDown label='Departamento' itens={departament} />
+                <MenuDropDown required={true} label='Departamento' itens={departament} />
                 <Button>
                     Criar Card
                 </Button>

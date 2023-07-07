@@ -5,7 +5,7 @@ const TextInput = (props) => {
     return (
         <div className='text-input'>
             <label>{props.label}</label>
-            <input placeholder={props.placeholder} />
+            <input required={props.required} placeholder={props.placeholder} />
         </div>
     )
 }
