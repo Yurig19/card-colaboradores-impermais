@@ -1,3 +1,4 @@
+import Button from '../Button'
 import MenuDropDown from '../MenuDropDown'
 import TextInput from '../TextInput'
 import './Forms.css'
@@ -18,6 +19,9 @@ const Forms = () => {
                 <TextInput label='Cargo' placeholder='Digite seu Cargo' />
                 <TextInput label='Imagem' placeholder='Informe a URL da Imagem' />
                 <MenuDropDown label='Departamento' itens={departament} />
+                <Button>
+                    Criar Card
+                </Button>
             </form>
         </section>
     )
