@@ -1,0 +1,12 @@
+.department {
+    text-align: center;
+    padding: 2em;
+    background-color: #D9F7E9;
+}
+
+.department h3 {
+    font-size: 32px;
+    border-bottom: 4px solid #57C278;
+    display: inline-block;
+    padding-bottom: 0.4em;
+}

@@ -1,6 +1,7 @@
-import { useState } from "react";
-import Banner from "./components/Banner";
-import Forms from "./components/Forms";
+import { useState } from "react"
+import Banner from "./components/Banner"
+import Forms from "./components/Forms"
+import Department from "./components/Department"
 
 function App() {
 
@@ -14,8 +15,11 @@ function App() {
     <div className="App">
       <Banner />
       <Forms registred={colaborator => { addColaborator(colaborator) }} />
+      <Department name='Produção' />
+      <Department name='Administração' />
+      <Department name='Recursos Humanos' />
     </div>
   );
 }
 
-export default App;
+export default App

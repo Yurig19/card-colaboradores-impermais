@@ -6,7 +6,7 @@ import './Forms.css'
 
 const Forms = (props) => {
 
-    const departament = [
+    const department = [
         'Produção',
         'Administração',
         'Recursos Humanos'
@@ -54,7 +54,7 @@ const Forms = (props) => {
                 <MenuDropDown
                     required={true}
                     label='Departamento'
-                    itens={departament}
+                    itens={department}
                     value={departamento}
                     toChange={value => setDepartamento(value)}
                 />
