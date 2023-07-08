@@ -2,8 +2,8 @@ import './Department.css'
 
 const Department = (props) => {
     return (
-        <section className='department'>
-            <h3>{props.name}</h3>
+        <section className='department' style={{ backgroundColor: props.backgroundColor }}>
+            <h3 style={{ borderColor: props.cardColor }}>{props.name}</h3>
         </section>
     )
 }
