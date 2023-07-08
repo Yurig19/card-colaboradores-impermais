@@ -1,14 +1,10 @@
-.text-input {
-    margin: 1.5em 0;
-}
-
-.text-input label {
+.menu__drop-down label {
     display: block;
     margin-bottom: 0.6em;
     font-size: 24px;
 }
 
-.text-input input {
+.menu__drop-down select {
     background-color: #FFF;
     box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
     width: 100%;
