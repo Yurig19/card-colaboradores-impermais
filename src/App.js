@@ -23,17 +23,17 @@ function App() {
     }
   ]
 
-  const [colaborators, setColaborators] = useState([])
+  const [collaborators, setCollaborators] = useState([])
 
-  const addColaborator = (colaborator) => {
-    console.log(colaborator)
-    setColaborators([...colaborators, colaborator])
+  const addCollaborator = (collaborator) => {
+    console.log(collaborator)
+    setCollaborators([...collaborators, collaborator])
   }
 
   return (
     <div className="App">
       <Banner />
-      <Forms departments={departments.map(department => department.name)} registred={colaborator => { addColaborator(colaborator) }} />
+      <Forms departments={departments.map(department => department.name)} registred={colaborator => { addCollaborator(colaborator) }} />
 
       {departments.map(department => <Department key={department.name} name={department.name} cardColor={department.cardColor} backgroundColor={department.backgroundColor} />)}
 
