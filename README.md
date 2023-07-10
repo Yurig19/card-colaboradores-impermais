@@ -1,8 +1,8 @@
 
 # Card Colaboradores Impermais
 
-O projeto cria cards de colaboradores da empresa, e faz uma separação por departamentos. Esse projeto foi de introdução ao React.
-Inspirado no figma: https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?type=design&node-id=134-128&mode=design&t=8LiV4Z6C0CWHXXDo-0
+O projeto cria cards de colaboradores da empresa, e faz uma separação por departamentos. Esse projeto foi de introdução ao React, através do curso da Alura de React.
+Inspirado no figma disponilbilizado pelo curso: https://www.figma.com/file/T6BLI1HfB81eYOiVgpqQz7/Projeto-Intro-ao-React?type=design&node-id=134-128&mode=design&t=8LiV4Z6C0CWHXXDo-0
 
 # Impermais (Impermeabilização em Geral)
 
