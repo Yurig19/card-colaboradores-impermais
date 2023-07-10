@@ -24,7 +24,7 @@ const Footer = () => {
             </div>
 
             <div className='logo'>
-                <img src='/img/impermais-logo-white.png' alt='Logo da Impermais' />
+                <img src='/img/Impermais-logo-white.png' alt='Logo da Impermais' />
             </div>
 
             <div className='dev'>
