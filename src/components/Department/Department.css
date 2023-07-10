@@ -9,3 +9,10 @@
     display: inline-block;
     padding-bottom: 0.4em;
 }
+
+.department .collaborators {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}

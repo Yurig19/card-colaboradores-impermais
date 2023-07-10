@@ -20,6 +20,11 @@ const Forms = (props) => {
             imagem,
             departamento
         })
+
+        setNome('')
+        setCargo('')
+        setImagem('')
+        setDepartamento('')
     }
 
     return (

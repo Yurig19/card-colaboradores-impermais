@@ -33,9 +33,15 @@ function App() {
   return (
     <div className="App">
       <Banner />
-      <Forms departments={departments.map(department => department.name)} registred={colaborator => { addCollaborator(colaborator) }} />
+      <Forms departments={departments.map(department => department.name)} registred={collaborator => { addCollaborator(collaborator) }} />
 
-      {departments.map(department => <Department key={department.name} name={department.name} cardColor={department.cardColor} backgroundColor={department.backgroundColor} />)}
+      {departments.map(department => <Department
+        key={department.name}
+        name={department.name}
+        cardColor={department.cardColor}
+        backgroundColor={department.backgroundColor}
+        collaborators={collaborators.filter(collaborator => collaborator.departamento === department.name)}
+      />)}
 
     </div>
   );

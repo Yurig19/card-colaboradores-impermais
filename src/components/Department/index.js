@@ -3,9 +3,11 @@ import './Department.css'
 
 const Department = (props) => {
     return (
-        <section className='department' style={{ backgroundColor: props.backgroundColor }}>
+        props.collaborators.length > 0 && <section className='department' style={{ backgroundColor: props.backgroundColor }}>
             <h3 style={{ borderColor: props.cardColor }}>{props.name}</h3>
-            <Collaborator />
+            <div className='collaborators'>
+                {props.collaborators.map(collaborator => <Collaborator name={collaborator.nome} office={collaborator.cargo} image={collaborator.imagem} />)}
+            </div>
         </section>
     )
 }
