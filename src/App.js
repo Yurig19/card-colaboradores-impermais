@@ -2,6 +2,7 @@ import { useState } from "react"
 import Banner from "./components/Banner"
 import Forms from "./components/Forms"
 import Department from "./components/Department"
+import Footer from "./components/Footer"
 
 function App() {
 
@@ -42,6 +43,7 @@ function App() {
         backgroundColor={department.backgroundColor}
         collaborators={collaborators.filter(collaborator => collaborator.departamento === department.name)}
       />)}
+      <Footer />
 
     </div>
   );
