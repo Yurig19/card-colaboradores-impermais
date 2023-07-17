@@ -3,6 +3,7 @@ import './Collaborator.css'
 const Collaborator = (props) => {
     return (
         <div className='collaborator'>
+            <div className='delete' onClick={props.toDelete}>Deletar</div>
             <div className='header' style={{ backgroundColor: props.color }}>
                 <img src={props.image} alt={props.name} />
             </div>

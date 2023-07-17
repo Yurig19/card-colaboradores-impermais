@@ -14,7 +14,7 @@ const Forms = (props) => {
 
     const submit = (event) => {
         event.preventDefault()
-        props.registred({
+        props.registered({
             nome,
             cargo,
             imagem,
