@@ -6,7 +6,7 @@ import Footer from "./components/Footer"
 
 function App() {
 
-  const departments = [
+  const [departments, setDepartments] = useState([
     {
       name: 'Produção',
       cardColor: '#57C278',
@@ -22,7 +22,7 @@ function App() {
       cardColor: '#A6D157',
       backgroundColor: '#F0F8E2'
     }
-  ]
+  ])
 
   const initialCollaborators = [
     {
@@ -39,8 +39,17 @@ function App() {
     setCollaborators([...collaborators, collaborator])
   }
 
-  function deleteCollaborator() {
+  const deleteCollaborator = () => {
     console.log('Deletando colaborador')
+  }
+
+  const changeColor = (color, name) => {
+    setDepartments(departments.map(department => {
+      if (department.name === name) {
+        department.cardColor = color
+      }
+      return department
+    }))
   }
 
   return (
@@ -49,6 +58,7 @@ function App() {
       <Forms departments={departments.map(department => department.name)} registered={collaborator => { addCollaborator(collaborator) }} />
       {departments.map(department =>
         <Department
+          changeColor={changeColor}
           key={department.name}
           name={department.name}
           cardColor={department.cardColor}
