@@ -9,18 +9,15 @@ function App() {
   const [departments, setDepartments] = useState([
     {
       name: 'Produção',
-      cardColor: '#57C278',
-      backgroundColor: '#D9F7E9'
+      color: '#57C278'
     },
     {
       name: 'Administração',
-      cardColor: '#82CFFA',
-      backgroundColor: '#E8F8FF'
+      color: '#82CFFA'
     },
     {
       name: 'Recursos Humanos',
-      cardColor: '#A6D157',
-      backgroundColor: '#F0F8E2'
+      color: '#A6D157'
     }
   ])
 
@@ -29,7 +26,19 @@ function App() {
       nome: 'Yuri Gonçalves',
       cargo: 'Auxiliar Administrativo',
       imagem: 'https://github.com/Yurig19.png',
+      departamento: departments[0].name
+    },
+    {
+      nome: 'Yuri Gonçalves',
+      cargo: 'Auxiliar Administrativo',
+      imagem: 'https://github.com/Yurig19.png',
       departamento: departments[1].name
+    },
+    {
+      nome: 'Yuri Gonçalves',
+      cargo: 'Auxiliar Administrativo',
+      imagem: 'https://github.com/Yurig19.png',
+      departamento: departments[2].name
     }
   ]
 
@@ -46,7 +55,7 @@ function App() {
   const changeColor = (color, name) => {
     setDepartments(departments.map(department => {
       if (department.name === name) {
-        department.cardColor = color
+        department.color = color
       }
       return department
     }))
@@ -61,8 +70,7 @@ function App() {
           changeColor={changeColor}
           key={department.name}
           name={department.name}
-          cardColor={department.cardColor}
-          backgroundColor={department.backgroundColor}
+          color={department.color}
           collaborators={collaborators.filter(collaborator => collaborator.departamento === department.name)}
           toDelete={deleteCollaborator}
         />
